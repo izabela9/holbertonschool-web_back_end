@@ -1,7 +1,8 @@
-#!/usr/bin/python3
-"""
-Simple model with  basic annotations - add
-"""
+#!/usr/bin/env python3
+'''
+Simple module for strongly
+typed python
+'''
 
 
 def add(a: float, b: float) -> float:
