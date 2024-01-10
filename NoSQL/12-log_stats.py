@@ -9,7 +9,7 @@ if __name__ == "__main__":
     client = MongoClient()
     logs_collection = client.logs["nginx"]
 
-    print(f"{logs_collection.count_documents({})}")
+    print(f"{logs_collection.count_documents({})} logs")
     print("Methods:")
     print(f"\tmethod GET: {logs_collection.count_documents({'method': 'GET'})}")
     print(f"\tmethod POST: {logs_collection.count_documents({'method': 'POST'})}")
