@@ -1,15 +1,9 @@
-function getResponseFromAPI(success) {
-  return new Promise((resolve, reject) => {
+function getResponseFromAPI() {
+  return new Promise((resolve) => {
     setTimeout(() => {
-      if (success) {
-        resolve({ status: 200, body: 'Success' });
-      } else {
-        reject(new Error('The fake API is not working currently'));
-      }
+      resolve();
     }, 10);
-	  .catch((error) => {
-      console.error('Error in getResponseFromAPI:', error.message);
   });
-});
 }
+
 export default getResponseFromAPI;
