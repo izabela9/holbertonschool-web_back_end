@@ -1,12 +1,13 @@
+/*eslint-disable*/
 export default function handleResponseFromAPI(promise) {
-  promise
-    .then((response) => {
-      return { status: 200, body: success };
-    })
-    .catch((error) => {
-      return new Error('');
-    })
+  return promise
     .then(() => {
-      console.log('Got a response from the API');
+      return { status: 200, body: "success" };
+    })
+    .catch((err) => {
+      return new Error();
+    })
+    .finally(() => {
+      console.log("Got a response from the API");
     });
 }
